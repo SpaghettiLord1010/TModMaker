@@ -1,0 +1,30 @@
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\CraftingStationIDs 2.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\CraftingStationIDs 3.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\CraftingStationIDs 4.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\CraftingStationIDs 5.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\CraftingStationIDs 6.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\CraftingStationIDs.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\IDs.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\ItemIDs - Kopie (2).mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\ItemIDs - Kopie (3).mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\ItemIDs - Kopie (4).mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\ItemIDs - Kopie (5).mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\ItemIDs - Kopie.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\ItemIDs.mdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\TModMaker.exe.config
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\TModMaker.exe
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\TModMaker.pdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\System.Windows.Forms.Ribbon.dll
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.Form1.resources
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.Properties.Resources.resources
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.csproj.GenerateResource.cache
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.csproj.CoreCompileInputs.cache
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.csproj.CopyComplete
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.exe
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.pdb
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.csprojAssemblyReference.cache
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\TModMaker.exe.manifest
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\TModMaker.application
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.TrustInfo.xml
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.exe.manifest
+H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.application
