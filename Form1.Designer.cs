@@ -1220,7 +1220,7 @@
             // textBox_WeaponName
             // 
             this.textBox_WeaponName.Location = new System.Drawing.Point(745, 14);
-            this.textBox_WeaponName.MaxLength = 10;
+            this.textBox_WeaponName.MaxLength = 40;
             this.textBox_WeaponName.Name = "textBox_WeaponName";
             this.textBox_WeaponName.Size = new System.Drawing.Size(361, 31);
             this.textBox_WeaponName.TabIndex = 4;
