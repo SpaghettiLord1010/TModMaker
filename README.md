@@ -20,6 +20,7 @@ I hope you have a fun time creating mods with this application, maybe I will wor
 There might be some little mistakes sometimes, but overall it was tested very well - it should work well!
 
 - [x] Finish ItemCreation
+- [ ] Finish Advanced ItemCreation options (heal, mana regeneration, buffing/debuffing)
 - [ ] Finish NPC-Creation
 - [ ] Finish Enemy-Creation
 
