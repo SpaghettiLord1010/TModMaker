@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="TModMaker.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="TModMaker.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="TModMaker.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TModMaker.exe" size="462656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TModMaker.exe" size="496448">
       <assemblyIdentity name="TModMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dv9DCFBRK3xpskUq1wXCr2xzED4e4YqsthKQSAAYPZo=</dsig:DigestValue>
+        <dsig:DigestValue>LTduwr+9B1+WRKkKytkBAM4HEAP127gz/jd9J6J917M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -183,13 +183,22 @@
       <dsig:DigestValue>tnC9Gba4aqW/9gq+EePAkbVLEWqAqBawGhRvdgNmvx4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TModMaker.exe.config" size="3638">
+  <file name="NPCIDs.mdb" size="315392" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Ur4gG7RUDdvCTQJp8XYHC6qswEcDk9wmrP9GdnhFdFI=</dsig:DigestValue>
+      <dsig:DigestValue>Kz3bIugDzC5xNixWn730lsekDXRNBHzW+6m3aX/CVV8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TModMaker.exe.config" size="3865">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AlyydnzR5wC5WXfzda2OCSRsTDJlNkHKtTZ7lyfADaA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TModMaker.ico" size="107729">
