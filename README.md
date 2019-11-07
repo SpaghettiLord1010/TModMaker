@@ -34,3 +34,7 @@ Shooting projectiles | Yes | Yes | Yes
 Healing | No | No | No
 Mana Regeneration | No | No | No
 Adding Buffs/Debuffs | No | No | No
+
+
+All credits for the databases used in this application are provided by https://terraria.gamepedia.com/Data_IDs under the https://creativecommons.org/licenses/by-nc-sa/3.0/ license.
+Data from the wiki were altered to work with the application!
