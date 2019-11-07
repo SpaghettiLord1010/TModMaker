@@ -19,7 +19,7 @@ namespace TModMaker
     public partial class Form1 : Form
     {
 
-        //intitializing all the variables for weapons
+        //intitializing all the variables
         string Folder;
         string ModName;
         bool Mana;
@@ -54,18 +54,9 @@ namespace TModMaker
         string CraftingItemsComplete;
         System.Drawing.Image ImageSprite;
 
-
-        //initializing all the variables for enemies
-        System.Drawing.Image NPCSpriteSheet;
-
-
         public Form1()
         {
             InitializeComponent();
-
-            //setting knockback resistence of NPC to jump in small steps
-            NumUpDown_NPCKnockBackResistence.DecimalPlaces = 2;
-            NumUpDown_NPCKnockBackResistence.Increment = 0.01m;
 
             //disabling all the stuff that shouldn't be accessible
             But_Chng_ModName.Enabled = false;
@@ -91,31 +82,10 @@ namespace TModMaker
             NumUpDown_CraftQuant4.Enabled = false;
             NumUpDown_CraftQuant5.Enabled = false;
             NumUpDown_CraftQuant6.Enabled = false;
-
-            //disabling drop items
-            comboBox_DropItem1.Enabled = false;
-            comboBox_DropItem2.Enabled = false;
-            comboBox_DropItem3.Enabled = false;
-            comboBox_DropItem4.Enabled = false;
-            comboBox_DropItem5.Enabled = false;
-            NumUpDown_DropItem_Min1.Enabled = false;
-            NumUpDown_DropItem_Min2.Enabled = false;
-            NumUpDown_DropItem_Min3.Enabled = false;
-            NumUpDown_DropItem_Min4.Enabled = false;
-            NumUpDown_DropItem_Min5.Enabled = false;
-            NumUpDown_DropItem_Max1.Enabled = false;
-            NumUpDown_DropItem_Max2.Enabled = false;
-            NumUpDown_DropItem_Max3.Enabled = false;
-            NumUpDown_DropItem_Max4.Enabled = false;
-            NumUpDown_DropItem_Max5.Enabled = false;
-
-            Butt_GenerateEnemyMod.Enabled = false;
         }
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: Diese Codezeile lädt Daten in die Tabelle "nPCIDsDataSet.NPCIDs". Sie können sie bei Bedarf verschieben oder entfernen.
-            this.nPCIDsTableAdapter.Fill(this.nPCIDsDataSet.NPCIDs);
             // TODO: Diese Codezeile lädt Daten in die Tabelle "_ItemIDs___Kopie__5_DataSet.ItemIDs". Sie können sie bei Bedarf verschieben oder entfernen.
             this.itemIDsTableAdapter5.Fill(this._ItemIDs___Kopie__5_DataSet.ItemIDs);
             // TODO: Diese Codezeile lädt Daten in die Tabelle "_ItemIDs___Kopie__4_DataSet.ItemIDs". Sie können sie bei Bedarf verschieben oder entfernen.
@@ -216,15 +186,6 @@ namespace TModMaker
         //refreshing all the stuff
         private void But_Refresh_Click(object sender, EventArgs e)
         {
-            //refreshing export button
-            if (TextBox_EnemyName.Text != "Enemy" && comboBox_EnemyCopy.Text != "")
-            {
-                Butt_GenerateEnemyMod.Enabled = true;
-            }
-
-            //refreshing NPCanimation frames
-            lbl_animationFrames.Text = comboBox_EnemyCopy.ValueMember;
-
             //refreshing crafting items
             if (checkBox_CraftItem1.Checked)
             {
@@ -825,7 +786,7 @@ namespace TModMaker
                 writer.Write(CompleteFileText);
             }
             ImageSprite.Save(Folder + "\\Items\\" + ModName.Replace(" ", "") + ".png");
-            MessageBox.Show("Finished creating the item-file and copying the picture! Enjoy your weapon!", "Success!");
+            MessageBox.Show("Finished creating the item-file and copying the picture! Enjoy your mod!", "Success!");
         }
 
         private void textBox_WeaponName_TextChanged(object sender, EventArgs e)
@@ -866,264 +827,6 @@ namespace TModMaker
             if (e.KeyChar.ToString() == "ö" || e.KeyChar.ToString() == "Ö" || e.KeyChar.ToString() == "ä" || e.KeyChar.ToString() == "Ä" || e.KeyChar.ToString() == "ü" || e.KeyChar.ToString() == "Ü" || e.KeyChar.ToString() == "ß" )
                 e.Handled = true;
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void NumUpDown_NPCDmg_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            openFileDialogNPC.Filter = "SpriteSheet *.png | *.png";
-            openFileDialogNPC.ShowDialog();
-            NPCSpriteSheet = System.Drawing.Image.FromFile(openFileDialogNPC.FileName);
-            lbl_npcWidth.Text = NPCSpriteSheet.Width.ToString();
-            int singleSpriteHeight = NPCSpriteSheet.Height/3;
-            lbl_npcHeight.Text = singleSpriteHeight.ToString();
-            lbl_FileNameNPC.Text = openFileDialogNPC.FileName;
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NumUpDown_DropItem_Min1_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void NumUpDown_DropItem_Min2_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void NumUpDown_DropItem_Min3_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void NumUpDown_DropItem_Min4_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void NumUpDown_DropItem_Min5_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void checkBox_DropItem1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_DropItem1.Checked)
-            {
-                comboBox_DropItem1.Enabled = true;
-                NumUpDown_DropItem_Max1.Enabled = true;
-                NumUpDown_DropItem_Min1.Enabled = true;
-            }
-            else
-            {
-                comboBox_DropItem1.Enabled = false;
-                NumUpDown_DropItem_Max1.Enabled = false;
-                NumUpDown_DropItem_Min1.Enabled = false;
-            }
-        }
-
-        private void checkBox_DropItem2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_DropItem2.Checked)
-            {
-                comboBox_DropItem2.Enabled = true;
-                NumUpDown_DropItem_Max2.Enabled = true;
-                NumUpDown_DropItem_Min2.Enabled = true;
-            }
-            else
-            {
-                comboBox_DropItem2.Enabled = false;
-                NumUpDown_DropItem_Max2.Enabled = false;
-                NumUpDown_DropItem_Min2.Enabled = false;
-            }
-        }
-
-        private void checkBox_DropItem3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_DropItem3.Checked)
-            {
-                comboBox_DropItem3.Enabled = true;
-                NumUpDown_DropItem_Max3.Enabled = true;
-                NumUpDown_DropItem_Min3.Enabled = true;
-            }
-            else
-            {
-                comboBox_DropItem3.Enabled = false;
-                NumUpDown_DropItem_Max3.Enabled = false;
-                NumUpDown_DropItem_Min3.Enabled = false;
-            }
-        }
-
-        private void checkBox_DropItem4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_DropItem4.Checked)
-            {
-                comboBox_DropItem4.Enabled = true;
-                NumUpDown_DropItem_Max4.Enabled = true;
-                NumUpDown_DropItem_Min4.Enabled = true;
-            }
-            else
-            {
-                comboBox_DropItem4.Enabled = false;
-                NumUpDown_DropItem_Max4.Enabled = false;
-                NumUpDown_DropItem_Min4.Enabled = false;
-            }
-        }
-
-        private void checkBox_DropItem5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_DropItem5.Checked)
-            {
-                comboBox_DropItem5.Enabled = true;
-                NumUpDown_DropItem_Max5.Enabled = true;
-                NumUpDown_DropItem_Min5.Enabled = true;
-            }
-            else
-            {
-                comboBox_DropItem5.Enabled = false;
-                NumUpDown_DropItem_Max5.Enabled = false;
-                NumUpDown_DropItem_Min5.Enabled = false;
-            }
-        }
-
-        private void Butt_GenerateEnemyMod_Click(object sender, EventArgs e)
-        {
-            string FolderNameMOD;
-            string NL = Environment.NewLine;
-
-            string ItemDrop1;
-            string ItemDrop2;
-            string ItemDrop3;
-            string ItemDrop4;
-            string ItemDrop5;
-
-
-            FolderNameMOD = Path.GetFileName(Path.GetDirectoryName(Folder + "\\build.txt"));
-
-            //adding all item strings together
-            if (checkBox_DropItem1.Checked)
-            {
-                ItemDrop1 = "Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, " + comboBox_DropItem1.SelectedValue + ", Main.rand.Next(" + NumUpDown_DropItem_Min1.Value + ", " + NumUpDown_DropItem_Max1.Value + "));";
-            }
-            else
-            {
-                ItemDrop1 = "";
-            }
-
-            if (checkBox_DropItem2.Checked)
-            {
-                ItemDrop2 = "Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, " + comboBox_DropItem2.SelectedValue + ", Main.rand.Next(" + NumUpDown_DropItem_Min2.Value + ", " + NumUpDown_DropItem_Max2.Value + "));";
-            }
-            else
-            {
-                ItemDrop2 = "";
-            }
-
-            if (checkBox_DropItem3.Checked)
-            {
-                ItemDrop3 = "Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, " + comboBox_DropItem3.SelectedValue + ", Main.rand.Next(" + NumUpDown_DropItem_Min3.Value + ", " + NumUpDown_DropItem_Max3.Value + "));";
-            }
-            else
-            {
-                ItemDrop3 = "";
-            }
-
-            if (checkBox_DropItem4.Checked)
-            {
-                ItemDrop4 = "Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, " + comboBox_DropItem4.SelectedValue + ", Main.rand.Next(" + NumUpDown_DropItem_Min4.Value + ", " + NumUpDown_DropItem_Max4.Value + "));";
-            }
-            else
-            {
-                ItemDrop4 = "";
-            }
-
-            if (checkBox_DropItem5.Checked)
-            {
-                ItemDrop5 = "Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, " + comboBox_DropItem5.SelectedValue + ", Main.rand.Next(" + NumUpDown_DropItem_Min5.Value + ", " + NumUpDown_DropItem_Max5.Value + "));";
-            }
-            else
-            {
-                ItemDrop5 = "";
-            }
-            string CompleteItemDrops = ItemDrop1 + NL + ItemDrop2 + NL + ItemDrop3 + NL + ItemDrop4 + NL + ItemDrop5;
-
-            string ModName = TextBox_EnemyName.Text;
-
-            string CompleteFileText = (
-                "using Terraria;" + NL +
-                "using Terraria.ID;" + NL +
-                "using Terraria.ModLoader;" + NL +
-                "namespace " + FolderNameMOD + ".NPCs" + NL +
-                "{" + NL +
-                "public class " + ModName.Replace(" ", "") + " : ModNPC" + NL +
-                "{" + NL +
-                "public override void SetStaticDefaults()" + NL +
-                "{" + NL +
-                "DisplayName.SetDefault(\"" + TextBox_EnemyName.Text + "\");" + NL +
-                "}" + NL + NL +
-                "public override void SetDefaults()" + NL +
-                "{" + NL +
-                "npc.width = " + NPCSpriteSheet.Width + ";" + NL +
-                "npc.height = " + NPCSpriteSheet.Height / 3 + ";" + NL +
-                "npc.damage = " + NumUpDown_NPCDmg.Value + ";" + NL +
-                "npc.defense = " + NumUpDown_NPCDefense.Value + ";" + NL +
-                "npc.lifeMax = " + NumUpDown_EnemyHealth.Value + ";" + NL +
-                "npc.HitSound = SoundID.NPCHit2;" + NL +
-                "npc.DeathSound = SoundID.NPCDeath2;" + NL +
-                "npc.aiStyle = " + comboBox_EnemyCopy.SelectedValue + ";" + NL +
-                "Main.npcFrameCount[npc.type] = 3;" + NL +
-                "aiType = " + comboBox_EnemyCopy.SelectedValue + ";" + NL +
-                "animationType = " + comboBox_EnemyCopy.SelectedValue + ";" + NL +
-                "}" + NL + NL +
-                "public override float SpawnChance(NPCSpawnInfo spawnInfo)" + NL +
-                "{" + NL +
-                "return SpawnCondition.OverworldNightMonster.Chance * " + NumUpDown_NPCSpwanRate.Value + "f;" + NL +
-                "}" + NL +
-                "public override void NPCLoot()" + NL +
-                "{" + NL +
-                CompleteItemDrops + NL +
-                "}" + NL +
-                "}" + NL +
-                "}"
-
-                );
-
-
-            if (!Directory.Exists(Folder + "\\NPCs\\"))
-            {
-                Directory.CreateDirectory(Folder + "\\NPCs\\");
-            }
-
-
-            using (StreamWriter writer = new StreamWriter(Folder + "\\NPCs\\" + ModName + ".cs"))
-            {
-                writer.Write(CompleteFileText);
-            }
-            NPCSpriteSheet.Save(Folder + "\\NPCs\\" + ModName.Replace(" ", "") + ".png");
-            MessageBox.Show("Finished creating the enemy-file and copying the picture! Enjoy your enemy!", "Success!");
-        }
-
-        private void TextBox_EnemyName_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
-            {
-
-                e.Handled = true;
-                base.OnKeyPress(e);
-
-            }
-
-            if (e.KeyChar.ToString() == "ö" || e.KeyChar.ToString() == "Ö" || e.KeyChar.ToString() == "ä" || e.KeyChar.ToString() == "Ä" || e.KeyChar.ToString() == "ü" || e.KeyChar.ToString() == "Ü" || e.KeyChar.ToString() == "ß")
-                e.Handled = true;
         }
     }
 }

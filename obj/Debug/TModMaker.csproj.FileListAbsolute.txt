@@ -28,4 +28,3 @@ H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\TModMaker.applicati
 H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.TrustInfo.xml
 H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.exe.manifest
 H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\obj\Debug\TModMaker.application
-H:\OneDrive\Terraria Mod Maker\TModMaker\TModMaker\bin\Debug\NPCIDs.mdb
