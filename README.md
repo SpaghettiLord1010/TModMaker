@@ -1,6 +1,7 @@
 # TModMaker by SpaghettiLord1010
 
 ## Made by SpaghettiLord1010 - application to create simple Terraria mods very quickly. (TModLoader needs to be installed!)
+## This Program is no being actively developed anymore and has been archived, feel free to fork your own copy to improve.
 
 This program aims to help you create mods very fast, first you will need to create a skeletton for your mod on this site:
 > http://javid.ddns.net/tModLoader/generator/ModSkeletonGenerator.html
